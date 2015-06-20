@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html ng-app="agendaTelefonica">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Agenda Telefonica</title>
+	<link rel="stylesheet", href="/vendor/bootstrap/dist/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet", href="/vendor/bootstrap/dist/css/bootstrap-theme.min.css"> -->
+	<style>
+		html,body{height: 100%;}
+		body{font-family: 'Open sans', Arial; overflow-x:hidden; background-color: #2f4050;}
+		.navbar-static-side{
+			z-index: 2001;
+			position: relative;
+			width:22%;
+			height: 100%;
+			float: left;
+			background-color: transparent;
+			transition: all 0.5s;
+		}
+		.nav > li.active{border-left: 4px solid #19aa8d; background: #293846;}
+		.nav > li.active a{color:#f7f7f7;}
+	.nav>li>a:focus, .nav>li>a:hover{ color:#2f4050 ;}
+		.wrapper{width: 100%; height: 100%; overflow: hidden;}
+		#page-wrapper{margin:0; padding: 0 15px; position: relative !important; float: right; width: 78%; height: 100%; background-color: #f9f9f9;   overflow-y: scroll;
+		}
+		.nav-header{
+			padding: 33px 25px;
+		}
+		.action-list{
+			background-color: #fff;
+			padding: 10px 12px;
+			width: 100%;
+			display: inline-block;
+			border: 1px solid #f2f2f2;
+			box-shadow: 0px 1px 0px #ccc;
+		}
+		.table-teste{
+			background-color: #fff;
+			padding: 12px 4px;
+  			margin-top: 10px;
+  			border: 1px solid #f2f2f2;
+  			box-shadow: 0px 1px 0px #ccc;
+		}	
+
+	</style>
+</head>
+<body>
+<div class="wrapper">
+<nav class="navbar-default navbar-static-side" role="navigation">
+	<div class="sider-collapse">
+		<ul class="nav" id="side-menu">
+			<li class="nav-header">
+				<div class="dropdown profile-element">
+					<span><img src="http://webapplayers.com/inspinia_admin-v2.1/img/profile_small.jpg" alt="" class="img-circle"></span>
+				</div>
+				<ul class="nav nav-tabs">
+
+  <li role="presentation" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" ng-href="" role="button" aria-expanded="false">
+      Dropdown <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu">
+		<li><a href="#/">Menu</a></li>
+		<li><a href="#/">Menu</a></li>
+		<li><a href="#/">Menu</a></li>
+		<li class="divider"></li>
+		<li><a href="#/">Menu</a></li>
+    </ul>
+  </li>
+
+</ul>
+			</li>
+			<li class="active"><a href="#/">List</a></li>
+			<li><a href="#/contato">Cadastrar</a></li>
+
+		</ul>
+	</div>
+</nav>
+	<div id="page-wrapper">
+		<div ng-view></div>
+	</div>
+</div>
+
+<script src="/vendor/angular/angular.js"></script>
+<script src="/vendor/angular-route/angular-route.js"></script>
+<script src="/vendor/angular-resource/angular-resource.js"></script>
+<script src="/javascripts/scripts.js"></script>
+<script src="/javascripts/services/contatoService.js"></script>
+<script src="/javascripts/controllers/contatosCtrl.js"></script>
+<script src="/javascripts/controllers/contatoCtrl.js"></script>
+<script src="/vendor/jquery/dist/jquery.js"></script>
+<script src="/vendor/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

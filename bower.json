@@ -1,0 +1,27 @@
+{
+  "name": "agendaTelefonica",
+  "version": "0.0.1",
+  "authors": [
+    "jefter <jeftarmascarenhas@hotmail.com>"
+  ],
+  "description": "Simples agenda telefonica",
+  "keywords": [
+    "agenda",
+    "agenda",
+    "telefonica"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.3",
+    "bootstrap": "~3.3.4",
+    "angular-route": "1.3",
+    "angular-resource": "1.3"
+  }
+}

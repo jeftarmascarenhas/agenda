@@ -1,0 +1,38 @@
+<div class="jumbotron">
+	<h1 class="text-center">Editar Contato</h1>
+</div>
+
+<a href="#/" class="btn btn-warning">Voltar</a>
+<br>
+<br>
+<p ng-show="mensagem.texto" class="alert alert-success">{{mensagem.texto}}</p>
+<form ng-submit="salva()">
+	<div class="form-group">
+		<input type="text" class="form-control" ng-model="contato.name" placeholder="Nome">
+	</div>
+
+	<div class="form-group">
+		<input type="text" class="form-control" ng-model="contato.phone" placeholder="Telefone">
+	</div>
+
+	<div class="form-group">
+		<input type="text" class="form-control" ng-model="contato.color" placeholder="Cor">
+	</div>
+
+	<div class="form-group">
+		<input type="text" class="form-control" ng-model="contato.operator" placeholder="Operadora">
+	</div>
+
+	<div class="form-group">
+		<input type="text" class="form-control" ng-model="contato.category" placeholder="Categoria">
+	</div>
+
+<div><button type="submit" class="btn btn-success">Salvar</button></div>
+
+</form>
+
+
+
+		
+		
+		

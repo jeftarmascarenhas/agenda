@@ -1,0 +1,34 @@
+
+	<div class="jumbotron text-center">
+		<h1>{{app}}</h1>
+	</div>
+	<div class="action-list">
+		<a ng-href="" class="btn btn-danger pull-right">Remover</a>
+	</div>
+<p ng-show="mensagem.texto"></p>
+<div class="table-teste">
+	<table class="table table-responsive">
+		<thead>
+			<tr>
+				<th>Nome:</th>
+				<th>Phones:</th>
+				<th>Color:</th>
+				<th>Operator:</th>
+				<th>Category:</th>
+				<th>Remove:</th>
+				<th>Edite:</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="contato in contatos">
+				<td>{{contato.name}}</td>
+				<td>{{contato.phone}}</td>
+				<td>{{contato.color}}</td>
+				<td>{{contato.operator}}</td>
+				<td>{{contato.category}}</td>
+				<td><a href="" ng-click="remove(contato)"><span class="glyphicon glyphicon-trash"></span></a></td>
+				<td><a ng-href="#/contato/{{contato._id}}"><span class="glyphicon glyphicon-pencil"></span></a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
